@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    #ext-trade-script-include#
+<!--#include virtual="/#videos-domain-name#-www/cgi.php?act=view&cid=#CATEGORY_ID#&page=#PAGE#" -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>#META_TITLE#</title>
+    <meta name="description" content="#META_DESCRIPTION#">
+    <link rel="canonical" href="http://www.#videos-domain-name#/" />
+	<link rel="stylesheet" href="/font#videos-rotator-folder#.css">
+	<link rel="stylesheet" href="/#videos-rotator-folder#.css">
+    <meta name="theme-color" content="##videos-link-hover#">
+</head>
+<body>
+       <header class="header">
+        <div class="width-wrap">
+            <div class="left-side">
+                <div class="#videos-v-thumb-logo#">
+                    <a href="/">#videos-site-name#</a>
+                </div>
+                <div class="menu-button dropdown-menu-switcher">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                <nav class="navigation dropdown-menu-container">
+                    <ul>
+                        <li><a href="#">Newest</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                        <li id="navigation_container" class="has-child">
+                            <span id="navigation_switcher" class="dropdown-switcher" >Categories</span>
+                            <div class="child dropdown-container">
+                                <ul>
+                                 #CATEGORIES_LIST#
+                                </ul>
+                                <div class="link-container">
+                                    <a href="#">All categories</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side">
+                <div class="search">
+                    <div class="search-button dropdown-switcher">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search-form dropdown-container">
+                        <form action="/">
+                            <input type="search" class="search-input" placeholder="Search..." />
+                            <button class="search-submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="thumbs-section">
+        <div class="width-wrap">
+            <div class="thumbs">
+              #THUMBS#
+            </div>
+        </div>
+    </div>
+    <div class="bottom-text">
+        <div class="width-wrap">
+            #META_TEXT#
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="width-wrap">
+            <div class="footer-text">
+                <a href="#">Home</a> |
+                <a href="">Terms</a> |
+                <a href="">DMCA</a>
+            </div>
+            <div class="footer-copyright">
+                © 2019 All rights reserved
+            </div>
+        </div>
+    </footer>
+    <div id="scroll_to_top" class="go-to-top"><i class="fas fa-arrow-circle-up"></i></div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
