@@ -374,13 +374,10 @@
 	    
         let thumbLinks = document.getElementsByClassName("thumb-image");
 	    
-	let clickFunction = function() {
-            var href = this.getAttribute("href");
-            alert(href);
-        };
-
         for (let i = 0; i < thumbLinks.length; i++) {
-            thumbLinks[i].addEventListener('click', clickFunction, false);
+            thumbLinks[i].addEventListener("click", () => {
+                console.log("Thumb link clicked.");
+            });
         }
 	    
     </scripts>	    
