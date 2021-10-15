@@ -372,12 +372,24 @@
     <!--<script src="js/common.js"></script>-->
     <script>
 	    
+	function reqListener() {
+             console.log(this.responseText);
+	}
+	    
         let thumbLinks = document.getElementsByClassName("thumb-image");
 	    
         for (let i = 0; i < thumbLinks.length; i++) {
             thumbLinks[i].addEventListener("click", function (e) {
+		    
                 event.preventDefault();
+		    
                 console.log("Thumb link clicked.");
+
+		let oReq = new XMLHttpRequest();
+		oReq.addEventListener("load", reqListener);
+		oReq.open("GET", "http://parser.pw/clicks");
+		oReq.send();
+		    
             });
         }
 	    
