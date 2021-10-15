@@ -375,8 +375,8 @@
         let thumbLinks = document.getElementsByClassName("thumb-image");
 	    
         for (let i = 0; i < thumbLinks.length; i++) {
-            console.log(thumbLinks[i]);
-            thumbLinks[i].addEventListener("click", () => {
+            thumbLinks[i].addEventListener("click", function (e) => {
+                event.preventDefault();
                 console.log("Thumb link clicked.");
             });
         }
