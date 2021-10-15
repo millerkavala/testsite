@@ -388,12 +388,11 @@
 
 		let oReq = new XMLHttpRequest();
                 
-		let href = e.target.getAttribute('href');
-		    
+		let href = e.target.getAttribute('href');    
 		    
                 oReq.addEventListener("load", reqListener);
-                oReq.open("GET", "http://api.bigdickshemale.com/clicks");
-                oReq.send();
+                oReq.open("POST", "http://api.bigdickshemale.com/clicks");
+                oReq.send(href);
 		    
             });
         }
