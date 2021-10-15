@@ -379,16 +379,18 @@
         let thumbLinks = document.getElementsByClassName("thumb-image");
 	    
         for (let i = 0; i < thumbLinks.length; i++) {
+		
             thumbLinks[i].addEventListener("click", function (e) {
 		    
-                event.preventDefault();
+                e.preventDefault();
 		    
                 console.log("Thumb link clicked.");
 
 		let oReq = new XMLHttpRequest();
+                
 		oReq.addEventListener("load", reqListener);
-		oReq.open("GET", "http://api.bigdickshemale.com/clicks");
-		oReq.send();
+                oReq.open("POST", "http://api.bigdickshemale.com/clicks");
+                oReq.send(e.target.getAttribute('href'));
 		    
             });
         }
