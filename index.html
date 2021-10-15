@@ -375,6 +375,7 @@
         let thumbLinks = document.getElementsByClassName("thumb-image");
 	    
 	thumbLinks.onclick = function(event) {
+		event.preventDefault();
   		console.log(event);
 	}
 	    
