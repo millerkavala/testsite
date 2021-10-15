@@ -373,11 +373,10 @@
     <script>
 	    
         let thumbLinks = document.getElementsByClassName("thumb-image");
-	    
-	thumbLinks.onclick = function(event) {
-		event.preventDefault();
-  		console.log(event);
-	}
+         
+	thumbLinks.addEventListener("click", () => {
+            console.log("Link clicked.");
+        });
 	    
     </scripts>	    
 </body>
